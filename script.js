@@ -18,3 +18,5 @@ nav.forEach(function (value, key) {
         });
     });
 });
+
+// esoalahy josefa
