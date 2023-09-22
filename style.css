@@ -23,14 +23,20 @@ body{
 }
 
 #navbarListe li{
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 1rem;
     border-radius:10px ;
     cursor: pointer;
+    color: goldenrod;
+}
+#navbarListe li:hover{
+    background-color: goldenrod;
+    color: white;
 }
 
 #corps{
     width: 1200px;
+    flex-wrap: wrap;
     display: flex;
     margin: auto;
 }
@@ -49,8 +55,8 @@ body{
 .template{
     display: flex;
     width: 600px;
-    min-width: 600px;
     max-width: max-content;
+    margin-top: 30px;
 }
 
 .imgFood{
@@ -60,21 +66,21 @@ body{
 }
 
 
-@media screen and (max-width: 1200px){
+@media screen and (min-width: 600px) and (max-width: 900px){
     #corps{
         display: inline-block;
-        width: 90vw;
+        width: 600px;
         margin: 0;
+
     }
 
-
     .example{
-        width: 900px;
-=
+        width: 600px;
     }
 
     .template{
-        margin: auto;
+        margin-inline: auto;
+        margin-top: 50px;
     }
 
     .imgFood{
@@ -82,18 +88,57 @@ body{
     }
 }
 
-@media screen and (max-width: 700px){
-    .template{
-        display: inline-block;
-    }
+@media screen and (max-width: 600px){
 
-    .imgFood{
-        width: 400px;
+    #corps{
+        display:block;
+        width: 90vw;
+        margin-inline: auto;
     }
 
     .example{
-        width:400px;
-        margin: 0 auto;
+        width: 90vw;
+    }
 
+    .template{
+        margin-inline: auto;
+        width: max-content;
+        display: block;
+        margin-top: 50px;
+    }
+
+    #navbarListe{
+        display: flex;
+        margin: 20px 0 ;
+        gap: 1px;
+        justify-content: center;
+        width: 300px;
+        font-size: 0.9rem;
+    }
+
+    .imgFood{
+        width: 200px;
     }
 }
+
+@media screen and (max-width: 400px){
+    #navbarListe{
+        display: flex;
+        margin: 20px 0 ;
+        gap: 1px;
+        justify-content: center;
+        width: 300px;
+        font-size: 0.9rem;
+    }
+
+    .title{
+        font-size: 1.2em;
+        text-decoration: underline 2px dashed;
+        text-underline-offset:0.4em;
+        margin: 0 0 1em 0;
+    }
+
+}
+
+
+
