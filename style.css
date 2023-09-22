@@ -16,6 +16,13 @@ body{
     margin: auto;
 }
 
+#head h1{
+    text-decoration: underline goldenrod;
+    text-underline-offset: 10px;
+
+
+}
+
 #navbarListe{
     display: flex;
     margin: 20px 0 ;
