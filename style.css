@@ -132,12 +132,23 @@ body{
     }
 
     .title{
-        font-size: 1.2em;
+        font-size: 0.8em;
         text-decoration: underline 2px dashed;
         text-underline-offset:0.4em;
         margin: 0 0 1em 0;
     }
 
+}
+
+@media screen and (max-width: 348px){
+
+    #navbarListe{
+        display: flex;
+        margin: 20px 0 ;
+        justify-content: center;
+        width: 300px;
+        font-size: 0.5rem;
+    }
 }
 
 
