@@ -140,7 +140,7 @@ body{
 
 }
 
-@media screen and (max-width: 348px){
+@media screen and (max-width: 378px){
 
     #navbarListe{
         display: flex;
